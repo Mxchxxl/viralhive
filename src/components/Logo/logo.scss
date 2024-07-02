@@ -1,0 +1,20 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  a {
+    text-decoration: none;
+    color: unset;
+    i {
+      color: rebeccapurple;
+      svg {
+        font-size: 1.5rem;
+      }
+    }
+    span {
+      font-size: 1.5rem;
+      text-transform: capitalize;
+    }
+  }
+}
