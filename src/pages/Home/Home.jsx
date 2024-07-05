@@ -1,8 +1,10 @@
 import "./home.scss"
 
+import Clients from "../../components/Clients/Clients"
 import Footer from "../../components/Footer/Footer"
 import Navigation from "../../components/Navigation/Navigation"
 import ReuseableHero from "../../components/ReuseableHero/ReuseableHero"
+import ReviewCarousel from "../../components/ReviewCarousel/ReviewCarousel"
 import SocialGirl from "/images/social-girl.jpg"
 import { TiktokIcon } from "../../assets/Icons"
 
@@ -31,6 +33,8 @@ const Home = () =>
         <div className="home-page">
             <Navigation />
             <ReuseableHero content={heroContent} />
+            <Clients />
+            <ReviewCarousel />
             <Footer />
         </div>
     )

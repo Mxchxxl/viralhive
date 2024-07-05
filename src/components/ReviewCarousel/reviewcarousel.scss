@@ -1,0 +1,110 @@
+@import "../../../breakpoints.scss";
+
+.review-carousel-container {
+  position: relative;
+  width: 100%;
+  @include lg {
+    margin-block: 100px;
+  }
+  .review-carousel-content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    padding-inline: 30px;
+    .carousel-slider-left {
+      position: absolute;
+      height: fit-content;
+      top: 50%;
+      left: -8px;
+      transform: translateY(-50%);
+      svg {
+        font-size: 40px;
+      }
+    }
+    .carousel-slider-right {
+      position: absolute;
+      height: fit-content;
+      top: 50%;
+      right: -8px;
+      transform: translateY(-50%);
+      svg {
+        font-size: 40px;
+      }
+    }
+    .carousel-slider {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 0px;
+      overflow-x: auto;
+      pointer-events: none;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      overflow-y: hidden;
+      scrollbar-width: thin;
+      border-radius: 10px;
+      -ms-overflow-style: none;
+      /* Internet Explorer 10+ */
+      scrollbar-width: none;
+      /* Firefox */
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .carousel-item {
+        min-width: 100%;
+        max-width: 100%;
+        padding-inline: 30px;
+        margin: auto;
+        position: relative;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        overflow: hidden;
+        background: transparent;
+        p {
+          @include md {
+            font-size: 1.5rem;
+          }
+        }
+        span {
+          @include md {
+            font-size: 1.2rem;
+          }
+        }
+        img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+        }
+        .big-purple-circle {
+          position: absolute;
+          background-color: violet;
+          opacity: 0.3;
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+          top: -50px;
+          right: -90px;
+          z-index: -1;
+        }
+        .small-pink-circle {
+          position: absolute;
+          background-color: pink;
+          opacity: 0.4;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          bottom: -40px;
+          left: 0px;
+          z-index: -1;
+        }
+      }
+    }
+    .no-transition {
+      scroll-behavior: auto;
+    }
+  }
+}
