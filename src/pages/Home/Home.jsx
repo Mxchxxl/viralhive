@@ -3,6 +3,7 @@ import "./home.scss"
 import Clients from "../../components/Clients/Clients"
 import Footer from "../../components/Footer/Footer"
 import Navigation from "../../components/Navigation/Navigation"
+import Promo from "../../components/Promo/Promo"
 import ReuseableHero from "../../components/ReuseableHero/ReuseableHero"
 import ReviewCarousel from "../../components/ReviewCarousel/ReviewCarousel"
 import SocialGirl from "/images/social-girl.jpg"
@@ -35,6 +36,7 @@ const Home = () =>
             <ReuseableHero content={heroContent} />
             <Clients />
             <ReviewCarousel />
+            <Promo />
             <Footer />
         </div>
     )
