@@ -1,5 +1,6 @@
 import "./home.scss"
 
+import Footer from "../../components/Footer/Footer"
 import Navigation from "../../components/Navigation/Navigation"
 import ReuseableHero from "../../components/ReuseableHero/ReuseableHero"
 import SocialGirl from "/images/social-girl.jpg"
@@ -30,7 +31,7 @@ const Home = () =>
         <div className="home-page">
             <Navigation />
             <ReuseableHero content={heroContent} />
-
+            <Footer />
         </div>
     )
 }
