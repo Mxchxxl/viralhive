@@ -1,5 +1,6 @@
 import "./home.scss"
 
+import CTA from "../../components/CTA/CTA"
 import Clients from "../../components/Clients/Clients"
 import Footer from "../../components/Footer/Footer"
 import Navigation from "../../components/Navigation/Navigation"
@@ -37,6 +38,7 @@ const Home = () =>
             <Clients />
             <ReviewCarousel />
             <Promo />
+            <CTA />
             <Footer />
         </div>
     )
