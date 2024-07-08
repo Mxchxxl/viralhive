@@ -1,0 +1,60 @@
+@import "../../../breakpoints.scss";
+
+.influencercta-container {
+  position: relative;
+  margin-block: 80px;
+  .influencercta-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    @include lg {
+      padding-block: 100px;
+    }
+
+    @include lg {
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+    }
+    .text {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 30px;
+
+      @include lg {
+        grid-column: 2/3;
+      }
+
+      h1 {
+        text-align: center;
+      }
+      p {
+        @include lg {
+          font-size: 1.3rem;
+        }
+      }
+      button {
+        width: 100%;
+        font-weight: 700;
+        text-transform: capitalize;
+        padding-inline: 20px;
+        max-width: 450px;
+        margin: auto;
+      }
+      span {
+        text-align: center;
+        a {
+          text-decoration: none;
+          color: var(--color);
+        }
+      }
+    }
+    img {
+      display: none;
+      @include lg {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
