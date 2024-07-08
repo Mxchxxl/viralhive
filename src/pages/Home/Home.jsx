@@ -4,6 +4,7 @@ import CTA from "../../components/CTA/CTA"
 import Clients from "../../components/Clients/Clients"
 import Footer from "../../components/Footer/Footer"
 import Navigation from "../../components/Navigation/Navigation"
+import OurprocessHero from "../../components/OurprocessHero/OurprocessHero"
 import Promo from "../../components/Promo/Promo"
 import Results from "../../components/Results/Results"
 import ReuseableHero from "../../components/ReuseableHero/ReuseableHero"
@@ -41,6 +42,7 @@ const Home = () =>
             <Promo />
             <CTA />
             <Results />
+            <OurprocessHero />
             <Footer />
         </div>
     )
