@@ -47,6 +47,7 @@ const Home = () =>
             <OurprocessHero />
             <InfluencerCTA />
             <CeoInfo />
+            <CTA />
             <Footer />
         </div>
     )
