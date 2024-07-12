@@ -1,0 +1,35 @@
+@import "../../../breakpoints.scss";
+
+.ceoinfo-container {
+  position: relative;
+  .ceoinfo-content {
+    padding-block-start: 50px;
+    margin-block-end: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+
+    @include lg {
+    }
+    h1 {
+      span {
+        color: var(--violet);
+      }
+    }
+    img {
+      width: 30%;
+      align-self: center;
+      border-radius: 10px;
+
+      @include lg {
+        width: 50%;
+        max-width: 250px;
+      }
+    }
+    > span {
+      margin-block-start: -20px;
+    }
+  }
+}

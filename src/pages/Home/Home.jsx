@@ -1,6 +1,7 @@
 import "./home.scss"
 
 import CTA from "../../components/CTA/CTA"
+import CeoInfo from "../../components/CeoInfo/CeoInfo"
 import Clients from "../../components/Clients/Clients"
 import Footer from "../../components/Footer/Footer"
 import InfluencerCTA from "../../components/InfluencerCTA/InfluencerCTA"
@@ -45,6 +46,7 @@ const Home = () =>
             <Results />
             <OurprocessHero />
             <InfluencerCTA />
+            <CeoInfo />
             <Footer />
         </div>
     )
