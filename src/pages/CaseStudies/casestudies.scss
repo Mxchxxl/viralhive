@@ -1,0 +1,10 @@
+.case-studies-page {
+  .case-studies-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 5%;
+    max-width: 1000px;
+    margin-inline: auto;
+  }
+}
