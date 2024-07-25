@@ -2,6 +2,7 @@ import "./App.scss"
 
 import { Route, Routes } from "react-router-dom"
 
+import AboutViralHive from "./pages/AboutViralHive/AboutViralHive"
 import CaseStudies from "./pages/CaseStudies/CaseStudies"
 import Home from './pages/Home/Home'
 import HowItWorks from "./pages/HowItWorks/HowItWorks"
@@ -22,6 +23,8 @@ function App()
         <Route path="/how-it-works/for-brands" element={<HowItWorks />} />
         <Route path="/how-it-works/for-creators" element={<HowItWorksCreators />} />
         <Route path="/results/case-studies" element={<CaseStudies />} />
+        <Route path="/about/viralhive" element={<AboutViralHive />} />
+
 
       </Routes>
     </div>
