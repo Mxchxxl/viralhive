@@ -8,6 +8,7 @@ import Home from './pages/Home/Home'
 import HowItWorks from "./pages/HowItWorks/HowItWorks"
 import HowItWorksCreators from "./pages/HowItWorksCreators/HowItWorksCreators"
 import Instagram from "./pages/Instagram/Instagram"
+import Page404 from "./pages/404/Page404"
 import Tiktok from "./pages/Tiktok/Tiktok"
 import Youtube from "./pages/Youtube/Youtube"
 
@@ -24,6 +25,7 @@ function App()
         <Route path="/how-it-works/for-creators" element={<HowItWorksCreators />} />
         <Route path="/results/case-studies" element={<CaseStudies />} />
         <Route path="/about/viralhive" element={<AboutViralHive />} />
+        <Route path="*" element={<Page404 />} />
 
 
       </Routes>
