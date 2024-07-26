@@ -1,0 +1,40 @@
+@import "../../../breakpoints.scss";
+
+.blankmedialink-container {
+  border: 1px solid #ffffff14;
+  margin: 10px;
+  box-shadow: 0 4px 8px 2px #0003;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+  .blankmedialink-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    @include lg {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .media {
+      img {
+        width: 100%;
+        max-height: 300px;
+      }
+    }
+    .text {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @include lg {
+        justify-content: center;
+      }
+
+      .custom-button {
+        width: fit-content;
+      }
+    }
+  }
+}
