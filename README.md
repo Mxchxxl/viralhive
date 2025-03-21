@@ -1,6 +1,14 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**cloned [ubiquitious](https://www.ubiquitousinfluence.com/) website**
+
+_view live at [https://viralhive.vercel.app/](https://viralhive.vercel.app/)_
+
+_using_
+
+- react.js
+- sass
+- vite
 
 Currently, two official plugins are available:
 
